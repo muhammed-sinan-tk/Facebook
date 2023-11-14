@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    overflow-x: hidden;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-hi p {
+    margin-top: 10px;
+}
+
+.img-logo img {
+    width: 200px;
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 20%;
+}
+
+.hello {
+    display: flex;
+}
+
+.hello input {
+    width: 170px;
+    margin-left: 1px;
+}
+
+input {
+    margin-top: 20px;
+    height: 25px;
+    padding-left: 8px;
+}
+
+.input-text input {
+    width: 340px;
+}
+
+.input-full select {
+    width: 110px;
+}
+
+.gender input {
+    position: relative;
+    top: 9px;
+
+}
+
+.card-info {
+    width: 360px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.new {
+    display: flex;
+    justify-content: space-around;
+}
+
+.log button {
+    width: 130px;
+    background-color: green;
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+}
+
+.log button:hover {
+    color: red;
+}
+
+
+
+.min {
+    border: 1px solid black;
+    width: 100px;
+    height: -9vh;
+}
+
+.new label {
+    position: relative;
+    top: -14px;
+    left: 2px;
+}
+
+.new input {
+    position: relative;
+    top: -8px;
+    left: 2px;
+}
+
+
+@media screen and (max-width:600px) {
+    .card-info {
+        width: 370px;
+        padding: 8px;
+    }
+
+    input {
+        border: 2px solid black;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div>
+        <div class="card">
+            <div class="card-info">
+                <div class="img-logo">
+                    <img src="images/4lCu2zih0ca.svg" alt="" class="img-fluid">
+                </div>
+                <div class="text">
+                    <div class="text-hi">
+                        <h3>Create a new account</h2>
+                            <p>It's quick and easy.</p>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="hello">
+                    <input type="text" id="name" name="name" placeholder="Full Name">
+                    <input type="text" id="surname" name="surname" placeholder="Surname">
+                </div>
+                <div class="input-text">
+                    <input type="text" id="moblie" placeholder="Moblie number or email address">
+                </div>
+                <div class="input-text">
+                    <input type="text" id="password" placeholder="New password">
+                </div>
+                <br>
+                <div class="input-full">
+                    <label for="">Date of birth</label>
+                    <i class="bi bi-question-circle-fill"></i><br>
+                    <select name="" id="day">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                    </select>
+                    <select name="" id="month">
+                        <option value="">jun</option>
+                        <option value="">fab</option>
+                        <option value="">mar</option>
+                        <option value="">apr</option>
+                        <option value="">may</option>
+                        <option value="">jun</option>
+                    </select>
+                    <select name="" id="year">
+                        <option value="">2018</option>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                    </select>
+                </div>
+                <br>
+                <div class="gender">
+                    <label for="">Gender</label>
+                    <i class="bi bi-question-circle-fill"></i>
+                    <div class="new" id="gender">
+                        <div class="min" id="female">
+                            <label for="">Female</label>
+                            <input type="radio">
+                        </div>
+                        <div class="min" id="male">
+                            <label for="">Male</label>
+                            <input type="radio">
+                        </div>
+                        <div class="min" id="Custom">
+                            <label for="">Custom</label>
+                            <input type="radio">
+                        </div>
+                    </div>
+                </div>
+                <div class="log">
+                    <button onclick="facebook()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let moblie = document.getElementById("moblie").value;
+        let password = document.getElementById("password").value;
+        let day = document.getElementById("day").value;
+        let month = document.getElementById("month").value;
+        let year = document.getElementById("year").value;
+        let female = document.getElementById("female").value;
+        let male = document.getElementById("male").value;
+        let Custom = document.getElementById("Custom").value;
+        function facebook() {
+            if (name === "" || surname === "") {
+                let name = document.getElementById("name").style.borderColor = "red";
+                let surname = document.getElementById("surname").style.borderColor = "red";
+                let moblie = document.getElementById("moblie").style.borderColor = "red";
+                let password = document.getElementById("password").style.borderColor = "red";
+                let day = document.getElementById("day").style.borderColor = "red";
+                let month = document.getElementById("month").style.borderColor = "red";
+                let year = document.getElementById("year").style.borderColor = "red";
+                let female = document.getElementById("female").style.borderColor = "red";
+                let male = document.getElementById("male").style.borderColor = "red";
+                let Custom = document.getElementById("Custom").style.borderColor = "red";
+                // alert("computer")
+                // return false;
+            }
+        }
+    </script>
+
+
+
+
+    <!-- <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
